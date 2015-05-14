@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBAction func clearScratches(sender: AnyObject) {
         scratchPad.scratches = []
         scratchPad.setNeedsDisplay()
+        
     }
     
     @IBOutlet weak var scratchPad:
