@@ -13,6 +13,7 @@
 		41D3DE691B04D70500C6C089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D3DE681B04D70500C6C089 /* Images.xcassets */; };
 		41D3DE6C1B04D70500C6C089 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D3DE6A1B04D70500C6C089 /* LaunchScreen.xib */; };
 		41D3DE781B04D70500C6C089 /* ScratchDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3DE771B04D70500C6C089 /* ScratchDrawTests.swift */; };
+		41D3DE821B04D9F500C6C089 /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3DE811B04D9F500C6C089 /* ScratchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		41D3DE711B04D70500C6C089 /* ScratchDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D3DE761B04D70500C6C089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41D3DE771B04D70500C6C089 /* ScratchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchDrawTests.swift; sourceTree = "<group>"; };
+		41D3DE811B04D9F500C6C089 /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		41D3DE5E1B04D70500C6C089 /* ScratchDraw */ = {
 			isa = PBXGroup;
 			children = (
-				41D3DE611B04D70500C6C089 /* AppDelegate.swift */,
 				41D3DE631B04D70500C6C089 /* ViewController.swift */,
 				41D3DE651B04D70500C6C089 /* Main.storyboard */,
-				41D3DE681B04D70500C6C089 /* Images.xcassets */,
-				41D3DE6A1B04D70500C6C089 /* LaunchScreen.xib */,
+				41D3DE811B04D9F500C6C089 /* ScratchView.swift */,
 				41D3DE5F1B04D70500C6C089 /* Supporting Files */,
 			);
 			path = ScratchDraw;
@@ -90,6 +90,9 @@
 		41D3DE5F1B04D70500C6C089 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41D3DE681B04D70500C6C089 /* Images.xcassets */,
+				41D3DE6A1B04D70500C6C089 /* LaunchScreen.xib */,
+				41D3DE611B04D70500C6C089 /* AppDelegate.swift */,
 				41D3DE601B04D70500C6C089 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -214,6 +217,7 @@
 			files = (
 				41D3DE641B04D70500C6C089 /* ViewController.swift in Sources */,
 				41D3DE621B04D70500C6C089 /* AppDelegate.swift in Sources */,
+				41D3DE821B04D9F500C6C089 /* ScratchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
