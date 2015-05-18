@@ -21,9 +21,36 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzS-MH-18a">
                                         <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MoV-im-D5y">
+                                                <rect key="frame" x="0.0" y="220" width="600" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5Lk-ff-GUP">
+                                                    <size key="itemSize" width="60" height="60"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colorCell" id="tjU-aQ-rbz" customClass="ColorCell" customModule="ScratchDraw" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="MoV-im-D5y" firstAttribute="top" secondItem="tzS-MH-18a" secondAttribute="top" constant="220" id="1ZN-gr-Bfn"/>
+                                            <constraint firstItem="MoV-im-D5y" firstAttribute="leading" secondItem="tzS-MH-18a" secondAttribute="leading" id="EnN-rY-t3l"/>
                                             <constraint firstAttribute="height" constant="300" id="dz8-V9-69X"/>
+                                            <constraint firstAttribute="trailing" secondItem="MoV-im-D5y" secondAttribute="trailing" id="pTn-nc-1NI"/>
+                                            <constraint firstAttribute="bottom" secondItem="MoV-im-D5y" secondAttribute="bottom" id="uH7-3n-eGj"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38Z-k6-sRy">
@@ -35,12 +62,26 @@
                                             <action selector="clearScratches:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Db8-al-LMq"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgg-Q9-QZ5">
+                                        <rect key="frame" x="277" y="249" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="hpL-Jd-juc"/>
+                                            <constraint firstAttribute="height" constant="30" id="pkJ-6j-HYU"/>
+                                        </constraints>
+                                        <state key="normal" title="🎨">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showHide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lJ-P1-uxR"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="tzS-MH-18a" firstAttribute="leading" secondItem="f37-oy-CIv" secondAttribute="leading" id="15j-Nx-DB4"/>
                                     <constraint firstAttribute="bottom" secondItem="tzS-MH-18a" secondAttribute="bottom" id="420-L7-hNM"/>
                                     <constraint firstAttribute="trailing" secondItem="tzS-MH-18a" secondAttribute="trailing" id="Hgp-TP-cMC"/>
+                                    <constraint firstItem="tzS-MH-18a" firstAttribute="top" secondItem="vgg-Q9-QZ5" secondAttribute="bottom" constant="21" id="eY4-BC-foX"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -53,12 +94,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fillColorCollectionView" destination="MoV-im-D5y" id="dkp-YW-e1w"/>
                         <outlet property="scratchPad" destination="f37-oy-CIv" id="RId-Ok-GXG"/>
+                        <outlet property="viewBottomContraint" destination="420-L7-hNM" id="BA6-wR-k43"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="227"/>
+            <point key="canvasLocation" x="97" y="216"/>
         </scene>
     </scenes>
 </document>

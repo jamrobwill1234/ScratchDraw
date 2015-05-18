@@ -14,6 +14,7 @@
 		41D3DE6C1B04D70500C6C089 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D3DE6A1B04D70500C6C089 /* LaunchScreen.xib */; };
 		41D3DE781B04D70500C6C089 /* ScratchDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3DE771B04D70500C6C089 /* ScratchDrawTests.swift */; };
 		41D3DE821B04D9F500C6C089 /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3DE811B04D9F500C6C089 /* ScratchView.swift */; };
+		41D3DE841B062AA500C6C089 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3DE831B062AA500C6C089 /* ColorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		41D3DE761B04D70500C6C089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41D3DE771B04D70500C6C089 /* ScratchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchDrawTests.swift; sourceTree = "<group>"; };
 		41D3DE811B04D9F500C6C089 /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
+		41D3DE831B062AA500C6C089 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				41D3DE631B04D70500C6C089 /* ViewController.swift */,
-				41D3DE651B04D70500C6C089 /* Main.storyboard */,
+				41D3DE831B062AA500C6C089 /* ColorCell.swift */,
 				41D3DE811B04D9F500C6C089 /* ScratchView.swift */,
+				41D3DE651B04D70500C6C089 /* Main.storyboard */,
 				41D3DE5F1B04D70500C6C089 /* Supporting Files */,
 			);
 			path = ScratchDraw;
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D3DE641B04D70500C6C089 /* ViewController.swift in Sources */,
+				41D3DE841B062AA500C6C089 /* ColorCell.swift in Sources */,
 				41D3DE621B04D70500C6C089 /* AppDelegate.swift in Sources */,
 				41D3DE821B04D9F500C6C089 /* ScratchView.swift in Sources */,
 			);
